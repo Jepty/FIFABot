@@ -15,10 +15,6 @@ async def register(event):
 
     if event.chat.username == 'statistika_fifa_penalty_fast':
 
-        with open('log.conf', 'r') as f:
-            send_mess = f.read()
-            print(send_mess)
-            await client.send_message('Progq_bot', send_mess)
   
         msg = event.message.message
 
@@ -33,6 +29,10 @@ async def register(event):
         total = 0
         try:
             total = a + b
+            with open('log.conf', 'r') as f:
+            send_mess = f.read()
+            print(send_mess)
+            await client.send_message('Progq_bot', send_mess)
         except:
             pass
 
