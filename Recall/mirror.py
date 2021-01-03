@@ -30,8 +30,8 @@ async def register(event):
         try:
             total = a + b
             with open('log.conf', 'r') as f:
-            send_mess = f.read()
-            print(send_mess)
+                send_mess = f.read()
+                print(send_mess)
             await client.send_message('Progq_bot', send_mess)
         except:
             pass
