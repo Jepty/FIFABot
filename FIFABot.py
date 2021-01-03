@@ -38,10 +38,10 @@ def privateChat(message):
             bot.send_message(message.chat.id, scorepoint)
 
 if __name__ == '__main__':
-	print('start')
-	while True:
-	    try:
-		bot.polling(none_stop=True)
-	    except:
-		pass
-	print('stop')
+        print('start')
+        while True:
+            try:
+                bot.polling(none_stop=True)
+            except:
+                pass
+        print('stop')
