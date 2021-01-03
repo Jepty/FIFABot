@@ -18,7 +18,7 @@ async def register(event):
         with open('log.conf', 'r') as f:
             send_mess = f.read()
             print(send_mess)
-            await client.send_message('TesFifBot', send_mess)
+            await client.send_message('Proga_bot', send_mess)
   
         msg = event.message.message
 
