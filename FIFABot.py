@@ -39,5 +39,9 @@ def privateChat(message):
 
 if __name__ == '__main__':
 	print('start')
-	bot.polling(none_stop=True)
+	while True:
+	    try:
+		bot.polling(none_stop=True)
+	    except:
+		pass
 	print('stop')
