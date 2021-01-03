@@ -65,5 +65,9 @@ async def recallmessage(event):
             print (total, ' edit') 
 
 if __name__ == '__main__':
-    client.start()
-    client.run_until_disconnected()
+    while True:
+        try:
+            client.start()
+            client.run_until_disconnected()
+        except:
+            pass
