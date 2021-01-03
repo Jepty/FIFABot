@@ -3,7 +3,7 @@ import time
 
 from telebot import types
 
-bot = telebot.TeleBot('1497958484:AAHMalgD0ilB_Cj6ovD17cs3S-w2C4HfEUA') #АPI bot'a который выдал Бот Фазер
+bot = telebot.TeleBot('1426888046:AAGfyUd0dfjoNvk7fP8zobTrzFULqP-DoSk') #АPI bot'a который выдал Бот Фазер
 
 @bot.message_handler(commands=['start'])
 def welcome(message):
