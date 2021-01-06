@@ -11,7 +11,7 @@ client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
 @client.on(events.NewMessage)  
 async def register(event):
 
-    print(event.chat.username)
+    #print(event.chat.username)
 
     if event.chat.username == 'statistika_fifa_penalty_fast':
 
@@ -25,20 +25,20 @@ async def register(event):
             if msg[i] == ")":
                 b = int(msg[i-1])
 
-        print(a,b)
+        #print(a,b)
         total = 0
         try:
             total = a + b
             with open('log.conf', 'r') as f:
                 send_mess = f.read()
-                print(send_mess)
+                #print(send_mess)
             await client.send_message('Progq_bot', send_mess)
         except:
             pass
 
         with open ('log.conf', 'w') as f:
             f.write(str(total))
-            print (total, ' new')         
+            #print (total, ' new')         
 
 @client.on(events.MessageEdited)
 async def recallmessage(event):
@@ -62,7 +62,7 @@ async def recallmessage(event):
 
         with open ('log.conf', 'w') as f:
             f.write(str(total))
-            print (total, ' edit') 
+            #print (total, ' edit') 
 
 if __name__ == '__main__':
     while True:
