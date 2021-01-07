@@ -42,7 +42,7 @@ async def register(event):
 
 @client.on(events.MessageEdited)
 async def recallmessage(event):
-    print(event.chat.username)
+    #print(event.chat.username)
     if event.chat.username == 'statistika_fifa_penalty_fast':
         msg = event.message.message
 
@@ -53,7 +53,7 @@ async def recallmessage(event):
             if msg[i] == ")":
                 b = int(msg[i-1])
 
-        print(a,b)
+        #print(a,b)
         total = 0
         try:
             total = a + b
