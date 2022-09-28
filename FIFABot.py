@@ -6,9 +6,9 @@ from telebot import types
 bot = telebot.TeleBot('1652220208:AAFm0QJZ_KrzfAlny_X7HXcaa7_b7ERNb2o') #АPI bot'a который выдал Бот Фазер
 bot.send_message(1561011865, 'Привет')
 
-# @bot.message_handler(commands=['start'])
-# def welcome(message):
-#     bot.send_message(message.chat.id, 'Привет')
+@bot.message_handler(commands=['start'])
+def welcome(message):
+    bot.send_message(message.chat.id, 'Привет')
 
 # def score(total):
 #     with open('score.txt', 'r') as f:
